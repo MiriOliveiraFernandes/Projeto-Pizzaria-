@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+:root{
+    --background_tela1:url(../img/bk-inicial.png);
+    --color_text:#fff; 
+    --back_botton:#B92C00;
+}
+.container{
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(159, 19, 0, 0.72) 20.94%, rgba(207, 124, 48, 0.00) 81.62%);
+}
+
+body{
+    background-image: var(--background_tela1);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    min-height: 100vh;
+    min-width: 100v; 
+    position: relative;
+}
+
+.logo{
+    display: flex;
+    margin-left: 60px;
+}
+
+.logo img{
+    width: 116px;
+    height: 106px;
+    margin-top: 40px;
+}
+
+.logo h2{
+    margin-top: 3%;
+    margin-left: 25px; 
+    color: var(--color_text);
+    font-family: Pattaya;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 40% */
+}
+
+.chamada{
+    margin-left: 30%;
+    width: 651px;
+}
+
+.chamada h2{
+    margin-top: 10%;
+    color: var(--color_text);
+    text-align: center;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.chamada p{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 7%;
+    width: 430px;
+    height: 132px;
+    color: var(--color_text);
+    text-align: center;
+    font-size: 25px;
+}
+
+.botao{
+    background-color: var(--back_botton);
+    opacity: 0.8;
+    width: 304px;
+    height: 81px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.botao a{
+    color: var(--color_text);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+button{
+    margin-bottom: 0 auto;
+    margin: 5% 30% ;
+}
+
+@media screen and (max-width: 1024px) {
+
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container{
+        width: 100vw;
+        overflow: hidden;  
+    }
+
+    .logo{
+        align-items: center;
+    }
+
+    .logo img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .logo h2{
+        font-size: 50px;
+        line-height: 30px;
+        margin: 8% 0 0 10px;
+    }
+
+    .chamada{
+        margin: 0 auto;
+        width: 450px;
+    }
+
+    .chamada h2{
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .chamada p{
+        font-size: 20px;
+        width: 350px;
+        margin: 7% 0 0 10%;
+    }
+
+    .botao {
+        /* background-color: aqua; */
+        margin:10% 0 0% 15%;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container{
+        width: 100vw;
+        overflow: hidden;  
+    }
+
+    .logo img{
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo h2{
+        font-size: 40px;
+        line-height: 25px;
+        margin: 8% 0 0 10px;
+    }
+
+    .chamada{
+        margin: 0 auto;
+        width: 450px;
+    }
+
+    .chamada h2{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .chamada p{
+        font-size: 20px;
+        width: 350px;
+        margin: 7% 0 0 10%;
+    } 
+
+    .botao{
+        margin:30% 0 0% 15%;
+    }  
+} 
+
+@media screen and (max-width:450px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container{
+        width: 100vw;
+        overflow: hidden;  
+    }
+
+    .logo{
+        width: 200px;
+       margin: 0 auto;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .logo h2{
+        margin-top: 30%;
+        font-size: 30px;
+    }
+
+    .chamada{
+        margin: 10% 0 0 10%;
+        width: 300px;
+    }
+
+    .chamada h2{
+        font-size: 40px;
+        text-align: center;
+        margin-top: 
+        40%;
+    }
+
+    .chamada p {
+        font-size: 
+        18px;
+        width: 295px;
+        margin: 7% 0 0 0%;
+    }
+
+    .botao{
+        width: 280px;
+        margin: 40% 0 0 5%;
+    }
+}

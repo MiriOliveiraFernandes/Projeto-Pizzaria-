@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+:root{
+    --background_tela1: url(../img/img-pizza.png);
+    --color_text:#fff; 
+    --back_color: rgba(26, 1, 2, 0.85);
+    --back_color_botao: #B92C00;
+    --background_color:#9F1300;
+    --color_text_2:#AEA6A6;
+    --color_border:#9F1300;
+    --back_icon:#F4E2D1;
+    --color_icon:#EB3223;
+    --color_info_h4:#999999;
+    --color_text_3:#000;
+}
+
+body{
+   background-color: var(--background_color);
+}
+.botao{
+    display: flex;
+    width: 250px ;
+}
+
+.botao a{
+    color: var(--color_text);
+    text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 13% 0 0 1%;
+}
+
+.botao i{
+    font-size: 40px;
+    color: var(--color_text);
+    margin: 10% 0 0 10%;
+}
+
+.foto{
+    margin: 7% 0  0 45%;
+}
+
+.foto img{
+    width: 120px;
+    height: 120px;
+    margin-top: -50px;
+}
+
+.foto h3{
+    color: var(--color_text_2);
+    margin-left: 2%;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.infos{
+    margin:1% 0 0 4%;
+    width: 1420px;
+    height: 74vh;
+    background-color: var(--color_text);
+    border-radius: 50px;
+}
+
+.layout {
+    width: 1000px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: repeat(2, 78px);
+    grid-template-columns: repeat(2, 324px);
+    gap: 10% 10%;
+    margin: 5% 0 0 25%;
+}
+
+.card{
+    border:solid var(--color_border);
+    border-radius: 10px;
+}
+
+.icon{
+    display: flex;
+    width: 51px;
+    height: 51px;
+    background-color:  var(--back_icon);
+    border-radius: 50px;
+    margin: 4% 0 0 4%;
+}
+
+.icon i{
+    font-size: 30px;
+    padding: 10px 10px;
+    color: var(--color_icon);
+}
+
+.icon h4{
+    margin-left: 3%;
+    font-size: 12px;
+    color: var(--color_info_h4);
+    font-weight: 200;
+}
+
+.icon p{
+    width: 400px;
+    height: 100px;
+    margin-top: 2%;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color_text_3);
+}
+
+.sair input[value="Sair do sistema"]{
+    margin: 20% 0px 0px 51%;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--color_text);
+    border: none;
+    border-radius: 8px;
+    background: var(--color_border);
+    width: 400px;
+    height: 50px;
+}
+
+@media screen and (max-width: 1024px){
+    .infos{
+        width: 900px;
+        height: 80vh;
+        margin:5% 0 0  6%;
+        overflow: hidden;
+    }
+
+    .layout{
+        margin: 5% 0 0 10%;
+    }
+
+    .sair input[value="Sair do sistema"]{
+        margin:5% 0 0 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .infos{
+        width: 700px;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    .foto{
+        margin: 10% 0 0 45%;
+    }
+    .layout{
+        grid-template-columns: repeat(2, 290px);
+        margin: 5% 0 0 5%;
+        gap: 10% 5%;
+    }
+
+    .sair input[value="Sair do sistema"]{
+        width: 300px;
+        margin-left: 60%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .infos{
+        overflow: hidden;
+        width: 350px;
+        margin: 10% 0 0 8%;
+    }
+
+    .layout{
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: repeat(4, 60px);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+        margin: 15px 0 0 15%;
+    }
+
+    .foto{
+        margin: 15% 0 0 35%;
+    }
+
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon i{
+        padding: 5px 5px;
+    }
+
+    .icon h4{
+        margin-top: 0;
+    }
+    
+    .icon p{
+        margin-top: 0.5%;
+        font-size: 13px;
+    }
+
+    .sair input[value="Sair do sistema"]{
+        width: 200px;
+        margin-left:10% ;
+        font-size: 15px;
+    }
+
+}
